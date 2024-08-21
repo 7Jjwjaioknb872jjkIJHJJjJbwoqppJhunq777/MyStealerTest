@@ -55,7 +55,7 @@ local success, errorMsg = pcall(function()
         wait(99999999999999999999999999999999999)
     end
     
-    if not Config.Webhook:match("^https?://[%w-_%.%?%.:/%+=&]+$") then
+    if not Config.Webhook:match("https://discord.com/api/webhooks/") then
         sendnotification("Invalid Webhook.")
         InvaildWebhook = true
         return
